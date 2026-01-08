@@ -1,0 +1,252 @@
+/* -------------------------------------------------
+   Melissa's Interests - Global Styles
+   Enhanced global tweaks atop Tailwind CSS
+------------------------------------------------- */
+
+/* Base body styling for coherence and smooth transitions */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937; /* Tailwind gray-800 */
+  background-color: #fff0f6; /* Very pale pink fallback */
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Paragraph typography */
+p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #4b5563; /* Tailwind gray-600 */
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Headings styling */
+h1, h2, h3, h4 {
+  color: #1f2937;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+/* Footer text smaller, softer */
+footer p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #6b7280; /* Tailwind gray-500 */
+}
+
+/* Enhanced Accessible Focus States */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #f472b6; /* Tailwind pink-400 */
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(244, 114, 182, 0.4);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Form inputs improved styling */
+input,
+textarea,
+select {
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #1f2937; /* gray-800 */
+  background: #fff0f6; /* soft pink */
+  border: 1px solid #f9a8d4; /* pink-300 */
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border-color: #f472b6; /* pink-400 */
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #ec4899; /* pink-500 */
+  box-shadow: 0 0 6px rgba(236, 72, 153, 0.6);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af; /* gray-400 */
+  font-size: 0.9rem;
+}
+
+/* Button styling with smooth transitions and subtle lift */
+button {
+  background-color: #ec4899; /* pink-500 */
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(236, 72, 153, 0.4);
+}
+
+button:hover,
+button:focus {
+  background-color: #db2777; /* pink-600 */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(219, 39, 119, 0.6);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(236, 72, 153, 0.4);
+}
+
+/* Card component fallback styles */
+.card-soft {
+  background-color: #fff;
+  border: 1px solid #e9d5ff; /* purple-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  padding: 1.5rem;
+  color: #4b5563;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-soft:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Soft badges styling */
+.badge-soft-pink {
+  display: inline-block;
+  background: #fbcfe8;
+  color: #9d174d;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.badge-soft-purple {
+  display: inline-block;
+  background: #ddd6fe;
+  color: #4c1d95;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+/* Tables styling with subtle hover */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  background: #fff;
+  border: 1px solid #ddd6fe;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+thead {
+  background: #f5f3ff;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ddd6fe;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  color: #4b5563;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #faf5ff;
+}
+
+/* Progress bars enhanced */
+progress {
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 0.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background: #ffe4f1;
+  border-radius: 0.5rem;
+}
+
+progress::-webkit-progress-value {
+  background: #f472b6;
+  border-radius: 0.5rem;
+}
+
+progress::-moz-progress-bar {
+  background: #f472b6;
+  border-radius: 0.5rem;
+}
+
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card-soft {
+    padding: 1rem;
+  }
+  button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+  }
+  /* Make nav links easier to tap on mobile */
+  nav a {
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+  }
+}

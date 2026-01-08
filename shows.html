@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Tailwind CSS via CDN -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Shows I Love - Melissa's Interests</title>
+</head>
+<body class="bg-pink-50 text-gray-900 flex flex-col min-h-screen">
+
+  <header class="bg-pink-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4" aria-label="Main navigation">
+      <div class="text-sm font-medium text-gray-800">Melissa's Interests</div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-pink-600">Home</a>
+        <a href="shows.html" class="text-pink-600 font-medium border-b-2 border-pink-400 pb-1">Shows</a>
+        <a href="food.html" class="text-gray-700 hover:text-pink-600">Food</a>
+        <a href="travel.html" class="text-gray-700 hover:text-pink-600">Travel</a>
+        <a href="travel.html" class="px-3 py-1 rounded-md border border-pink-300 text-pink-700 hover:bg-pink-100 hover:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-pink-50">Recommend a trip</a>
+      </div>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-4">
+      <div class="relative overflow-hidden rounded-lg shadow-md flex items-center justify-center min-h-[260px] md:min-h-[320px]">
+        <img src="images/cosy.jpeg" alt="Warm cosy bedroom at night with candles, blankets and a city view out the window" class="absolute inset-0 w-full h-full object-cover opacity-70"/>
+        <div class="absolute inset-0 bg-gradient-to-tr from-pink-300/60 via-purple-400/50 to-pink-200/40 mix-blend-multiply"></div>
+        <div class="relative text-center text-white max-w-xl px-4 py-10">
+          <h1 class="text-3xl md:text-4xl font-semibold leading-tight drop-shadow">Shows I'm Loving Right Now 💕</h1>
+          <p class="text-base md:text-lg mt-4 leading-relaxed text-pink-50 font-normal drop-shadow">
+            I’m a romantic drama / comfort show girl. I love pretty lighting, emotional storylines, and characters who are dramatic for no reason. These are the stories living rent-free in my head.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="flex-grow">
+    <section class="max-w-6xl mx-auto px-4 pt-12 pb-16">
+      <div class="grid gap-8 md:grid-cols-2 bg-white rounded-lg border border-purple-200 shadow-sm overflow-hidden">
+        <div class="relative h-72 md:h-auto bg-purple-100">
+          <img src="images/sitp.jpeg" alt="The Summer I Turned Pretty promotional poster with main cast in summer outfits" class="absolute inset-0 w-full h-full object-cover object-top"/>
+        </div>
+        <div class="p-6 flex flex-col justify-center">
+          <span class="inline-block bg-purple-200 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full w-fit">Featured comfort show</span>
+          <h2 class="text-xl font-semibold text-gray-900 mt-4">The Summer I Turned Pretty</h2>
+          <p class="text-gray-700 text-sm leading-relaxed mt-3">
+            This show is my soft spot. It’s sun, nostalgia, first love, heartbreak, and that dreamy “the whole summer changes everything” vibe...
+          </p>
+          <p class="text-gray-700 text-sm leading-relaxed mt-3">
+            I rewatch it because it feels safe and familiar. It’s like watching summer memories on screen...
+          </p>
+          <div class="mt-6 text-sm text-gray-800 font-medium">
+            Rewatch progress: 50%
+            <div class="mt-2">
+              <label for="rewatch-progress" class="sr-only">Rewatch progress for The Summer I Turned Pretty</label>
+              <progress id="rewatch-progress" value="50" max="100" class="w-full">50%</progress>
+              <p class="text-gray-500 text-xs mt-1">Halfway through (again) 💗</p>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <h3 class="text-sm font-semibold text-gray-900 mb-2">Where I'm watching:</h3>
+            <table class="w-full text-left text-sm text-gray-700 border border-purple-200 rounded-lg overflow-hidden">
+              <thead class="bg-purple-100 text-gray-800 font-semibold">
+                <tr><th class="border-b border-purple-200 p-2">Show</th><th class="border-b border-purple-200 p-2">Platform</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border-b border-purple-200 p-2">The Summer I Turned Pretty</td>
+                  <td class="border-b border-purple-200 p-2">Prime Video</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="bg-white rounded-lg border border-pink-200 shadow-sm overflow-hidden">
+        <div class="relative h-64 bg-pink-100">
+          <img src="images/kdramas-collage.jpeg" alt="Collage of romantic K-drama couples with pink cutout sticker aesthetic" class="absolute inset-0 w-full h-full object-cover object-center"/>
+        </div>
+        <div class="p-6">
+          <span class="inline-block bg-pink-200 text-pink-800 text-xs font-semibold px-3 py-1 rounded-full">K-Dramas before Korea 👀</span>
+          <h2 class="text-xl font-semibold text-gray-900 mt-4">Building my Seoul moodboard through dramas</h2>
+          <p class="text-gray-700 text-sm leading-relaxed mt-3">Before I go to Korea for my birthday, I want to fully live in the vibe...</p>
+
+          <div class="grid md:grid-cols-2 gap-6 mt-6 text-sm text-gray-700 leading-relaxed">
+            <div class="bg-pink-50 border border-pink-200 rounded-md p-4">
+              <h3 class="text-gray-900 font-semibold text-base">XO, Kitty</h3>
+              <p class="mt-2">Light, cute, messy in a teenager way and honestly just fun...</p>
+            </div>
+            <div class="bg-purple-50 border border-purple-200 rounded-md p-4">
+              <h3 class="text-gray-900 font-semibold text-base">Marry My Husband</h3>
+              <p class="mt-2">Revenge. Drama. Plot twists. The satisfying “I am taking my life back” energy.</p>
+            </div>
+            <div class="bg-pink-50 border border-pink-200 rounded-md p-4">
+              <h3 class="text-gray-900 font-semibold text-base">Queen of Tears</h3>
+              <p class="mt-2">Cinematic, rich-looking, emotional, dramatic marriage storyline.</p>
+            </div>
+            <div class="bg-purple-50 border border-purple-200 rounded-md p-4">
+              <h3 class="text-gray-900 font-semibold text-base">When the Phone Rings</h3>
+              <p class="mt-2">Mystery and tension but still pretty; feels atmospheric and a little eerie.</p>
+            </div>
+            <div class="bg-pink-50 border border-pink-200 rounded-md p-4 md:col-span-2">
+              <h3 class="text-gray-900 font-semibold text-base">Buried Hearts (Disney+)</h3>
+              <p class="mt-2">Emotional and intense. This is not a light little fluffy romance, this one hits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 pb-16">
+      <div class="grid gap-8 md:grid-cols-2 items-stretch bg-white rounded-lg border border-purple-200 shadow-sm overflow-hidden">
+        <div class="relative h-64 md:h-auto bg-purple-100">
+          <img src="images/soft-lavendar-tv.jpeg" alt="Lavender mood lighting in a room with popcorn, remote, and a glowing TV in the background" class="absolute inset-0 w-full h-full object-cover object-center"/>
+        </div>
+        <div class="p-6 flex flex-col justify-center">
+          <span class="inline-block bg-purple-200 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full w-fit">My perfect night in</span>
+          <h2 class="text-xl font-semibold text-gray-900 mt-4">My comfort setup 🕯️</h2>
+          <p class="text-gray-700 text-sm leading-relaxed mt-3">My ideal evening is fairy lights on, something emotional playing, snacks within arm’s reach, and phone on do not disturb...</p>
+          <p class="text-gray-700 text-sm leading-relaxed mt-3">I don’t even have to be fully watching — sometimes I just like the glow and the feeling of not being alone in the room.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 pb-20">
+      <div class="bg-white rounded-lg border border-pink-200 shadow-sm p-6">
+        <span class="inline-block bg-pink-200 text-pink-800 text-xs font-semibold px-3 py-1 rounded-full">Your turn 💬</span>
+        <h2 class="text-xl font-semibold text-gray-900 mt-4">Recommend me a drama I should watch next</h2>
+        <p class="text-gray-700 text-sm leading-relaxed mt-3 mb-6">I’m always looking for my next emotional obsession...</p>
+        <form class="space-y-4" action="#" method="POST">
+          <div>
+            <label class="block text-sm font-medium mb-1 text-gray-700" for="yourname">Your Name</label>
+            <input class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-400" type="text" id="yourname" name="yourname" placeholder="e.g. Alex" required/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1 text-gray-700" for="showrec">Show / Drama Title</label>
+            <input class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-400" type="text" id="showrec" name="showrec" placeholder="e.g. Queen of Tears" required/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1 text-gray-700" for="why">Why should I watch it?</label>
+            <textarea class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 min-h-[90px] focus:outline-none focus:ring-2 focus:ring-pink-400" id="why" name="why" placeholder="slow burn romance? iconic second lead? aesthetic lighting?" required></textarea>
+          </div>
+          <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white font-medium text-sm px-4 py-2 rounded-md shadow focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-pink-50 transition">Send ✉️</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-pink-200 bg-pink-50">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-700">
+      <div class="md:flex md:justify-between md:items-start gap-8">
+        <div class="mb-8 md:mb-0">
+          <div class="font-medium text-gray-900 mb-4">Melissa's Interests</div>
+          <div class="flex gap-4 text-xl text-pink-700" aria-label="Social icons">
+            <span role="img" aria-label="chat bubble">💬</span>
+            <span role="img" aria-label="camera">📸</span>
+            <span role="img" aria-label="music">🎧</span>
+            <span role="img" aria-label="plane">✈️</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 text-gray-700">
+          <div>
+            <div class="font-medium text-gray-900 mb-3">Shows</div>
+            <ul class="space-y-2">
+              <li><a href="shows.html" class="hover:text-pink-600">Current fave</a></li>
+              <li><a href="shows.html" class="hover:text-pink-600">Watchlist</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900 mb-3">Food</div>
+            <ul class="space-y-2">
+              <li><a href="food.html" class="hover:text-pink-600">Bar Iberico</a></li>
+              <li><a href="food.html" class="hover:text-pink-600">Tapas obsession</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900 mb-3">Travel</div>
+            <ul class="space-y-2">
+              <li><a href="travel.html" class="hover:text-pink-600">Hong Kong</a></li>
+              <li><a href="travel.html" class="hover:text-pink-600">Korea plan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-pink-700 text-xs mt-10">© 2025 Melissa. Built with HTML, Tailwind CSS, and pastel drama energy.</p>
+    </div>
+  </footer>
+</body>
+</html>

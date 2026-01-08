@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Travel - Melissa's Interests</title>
+</head>
+<body class="bg-pink-50 text-gray-900 flex flex-col min-h-screen">
+
+  <header class="bg-pink-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4" aria-label="Main navigation">
+      <div class="text-sm font-medium text-gray-800">Melissa's Interests</div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-pink-600">Home</a>
+        <a href="shows.html" class="text-gray-700 hover:text-pink-600">Shows</a>
+        <a href="food.html" class="text-gray-700 hover:text-pink-600">Food</a>
+        <a href="travel.html" class="text-pink-600 font-medium border-b-2 border-pink-400 pb-1">Travel</a>
+        <a href="travel.html" class="px-3 py-1 rounded-md border border-pink-300 text-pink-700 hover:bg-pink-100 hover:border-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-pink-50">Recommend a trip</a>
+      </div>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-4">
+      <div class="relative overflow-hidden rounded-lg bg-purple-200 shadow-md flex items-center justify-center min-h-[240px] md:min-h-[300px]">
+        <img src="images/hk-street-food.jpeg" alt="Soft pink sunset over a city skyline and water, dreamy travel mood" class="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-multiply" />
+        <div class="absolute inset-0 bg-gradient-to-tr from-purple-300/60 via-pink-200/70 to-pink-100/40"></div>
+        <div class="relative text-center text-white max-w-xl px-4 py-10">
+          <h1 class="text-3xl md:text-4xl font-semibold leading-tight drop-shadow">Travel & Plans ✈️</h1>
+          <p class="text-base md:text-lg mt-4 leading-relaxed text-pink-50 font-normal drop-shadow">Places I’ve loved, places I’m manifesting, and where I want to spend my next birthday. This is basically my “I will romanticise my life” list.</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="flex-grow">
+    <section class="max-w-6xl mx-auto px-4 pt-12 pb-16">
+      <div class="grid gap-8 md:grid-cols-3">
+
+        <article class="md:col-span-2 bg-white rounded-lg border border-purple-200 shadow-sm overflow-hidden">
+          <div class="relative h-64 bg-purple-100">
+            <img src="images/hk-skyline.jpeg" alt="High view of a glowing city skyline at night with neon lights and water reflections" class="absolute inset-0 w-full h-full object-cover"/>
+          </div>
+          <div class="p-6">
+            <span class="text-xs inline-block bg-purple-200 text-purple-800 font-medium px-2 py-1 rounded mb-3">Travel memory</span>
+            <h2 class="text-lg font-semibold text-gray-900">Hong Kong 🇭🇰</h2>
+            <p class="text-gray-700 text-sm mt-2 leading-relaxed">Hong Kong feels electric. It’s loud, bright, alive — like the city itself is a character...</p>
+            <p class="text-gray-700 text-sm mt-4 leading-relaxed">My favourite part was how late everything goes on...</p>
+            <figure class="mt-6 bg-purple-50 rounded-md p-4">
+              <blockquote class="text-gray-700 italic text-sm leading-relaxed">"The city never sleeps, it just glows."</blockquote>
+              <figcaption class="text-xs text-gray-500 mt-2"><cite>How I described Hong Kong after eating dim sum at ridiculous o'clock 🌙</cite></figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <div class="flex flex-col gap-8">
+          <article class="bg-white rounded-lg border border-pink-200 shadow-sm overflow-hidden">
+            <div class="relative h-40 bg-pink-100">
+              <img src="images/korea-palace.jpeg" alt="Pastel-toned view of traditional Korean rooftops with a modern city skyline behind them" class="absolute inset-0 w-full h-full object-cover" />
+            </div>
+            <div class="p-6">
+              <span class="text-xs inline-block bg-pink-200 text-pink-800 font-medium px-2 py-1 rounded mb-3">Next trip</span>
+              <h3 class="text-base font-semibold text-gray-900">Korea for my birthday 🇰🇷</h3>
+              <p class="text-gray-700 text-sm mt-2 leading-relaxed">My dream is to spend my birthday in Korea. I want late-night KBBQ...</p>
+              <p class="text-gray-700 text-sm mt-4 leading-relaxed">I’m especially obsessed with Seoul because it feels like style + food + cute culture...</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-lg border border-purple-200 shadow-sm overflow-hidden p-6">
+            <span class="text-xs inline-block bg-purple-200 text-purple-800 font-medium px-2 py-1 rounded mb-3">Tell me where to go next</span>
+            <h3 class="text-base font-semibold text-gray-900 mb-2">Help me plan my next trip ✈️</h3>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4">Give me ideas. Where should I go next and why? Sell me the vibe...</p>
+            <form class="space-y-4" action="#" method="POST">
+              <div>
+                <label class="block text-sm font-medium mb-1 text-gray-700" for="name">Your Name</label>
+                <input class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-400" type="text" id="name" name="name" placeholder="e.g. Alex" required />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1 text-gray-700" for="destination">Where should I go?</label>
+                <input class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-400" type="text" id="destination" name="destination" placeholder="City / Country" required />
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1 text-gray-700" for="reason">Why should I go there?</label>
+                <textarea class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 min-h-[90px] focus:outline-none focus:ring-2 focus:ring-pink-400" id="reason" name="reason" placeholder="Food? Views? Shopping? Vibes?" required></textarea>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1 text-gray-700" for="month">Best month to visit?</label>
+                <input class="w-full border border-pink-300 rounded-md p-2 text-gray-800 bg-pink-50 focus:outline-none focus:ring-2 focus:ring-pink-400" type="text" id="month" name="month" placeholder="e.g. April" />
+              </div>
+              <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white font-medium text-sm px-4 py-2 rounded-md shadow focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 focus:ring-offset-pink-50 transition">Send ✉️</button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-pink-200 bg-pink-50">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm text-gray-700">
+      <div class="md:flex md:justify-between md:items-start gap-8">
+        <div class="mb-8 md:mb-0">
+          <div class="font-medium text-gray-900 mb-4">Melissa's Interests</div>
+          <div class="flex gap-4 text-xl text-pink-700" aria-label="Social icons">
+            <span role="img" aria-label="chat bubble">💬</span>
+            <span role="img" aria-label="camera">📸</span>
+            <span role="img" aria-label="music">🎧</span>
+            <span role="img" aria-label="plane">✈️</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 text-gray-700">
+          <div>
+            <div class="font-medium text-gray-900 mb-3">Shows</div>
+            <ul class="space-y-2">
+              <li><a href="shows.html" class="hover:text-pink-600">Current fave</a></li>
+              <li><a href="shows.html" class="hover:text-pink-600">Watchlist</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900 mb-3">Food</div>
+            <ul class="space-y-2">
+              <li><a href="food.html" class="hover:text-pink-600">Bar Iberico</a></li>
+              <li><a href="food.html" class="hover:text-pink-600">Tapas obsession</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="font-medium text-gray-900 mb-3">Travel</div>
+            <ul class="space-y-2">
+              <li><a href="travel.html" class="hover:text-pink-600">Hong Kong</a></li>
+              <li><a href="travel.html" class="hover:text-pink-600">Korea plan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="text-pink-700 text-xs mt-10">© 2025 Melissa. Built with HTML, Tailwind CSS, and my travel moodboard energy.</p>
+    </div>
+  </footer>
+</body>
+</html>
